@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav#nav-bar {
+    flex-grow: 1;
+}
+
+
+main {
+    width: 100%;
+    height: 100vh;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+main div {
+    position: relative;
+    height: 100%;
+}
+
+#header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 1;
+    height: auto;
+}
+
+.header-img {
+    flex-grow: 1;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.header-img img {
+    width: 275px;
+}
+
+form-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 25px;
+    border: 1px solid #80808069;
+    padding: 50px;
+    box-sizing: border-box;
+    margin: 20px auto;
+}
+
+#email {
+    width: 200px;
+    padding: 10px 20px;
+    border: 0;
+    outline: none;
+}
+#submit {
+    width: 200px;
+    height: 30px;
+    background: skyblue;
+    outline: none;
+    border: 0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 40px;
+}
+
+.content h1 {
+    font-size: 70px;
+    font-weight: bold;
+    color: #262626;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+#about .content h1,
+#portfolio .content h1,
+#services .content h1,
+#contact .content h1 {
+    color: #5b5b5b;
+}
+
+.content p {
+    line-height: 1.5;
+    margin: auto;
+    color: #000;
+}
+
+ul {
+    padding: 0;
+    text-align: center;
+    z-index: 1;
+    left: 0;
+    right: 0;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+ul li a {
+    display: block;
+    height: 45px;
+    font-size: 20px;
+    background: #fff;
+    width: 125px;
+    color: #262626;
+    margin: 4px 0;
+    line-height: 45px;
+}
+
+ul li a:hover {
+    background: tomato;
+    text-decoration: none;
+    color: #fff;
+}
+
+#home {
+    background: #ededed;
+}
+
+#portfolio,
+#contact {
+    background: #f3f3f3;
+}
+
+@media (max-width: 500px) {
+    .content h1 {
+        font-size: 30px;
+    }
+}
